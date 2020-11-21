@@ -18,4 +18,4 @@ jobs:
               uses: peaceiris/actions-gh-pages@v3
               with:
                   github_token: ${{ secrets.TOKEN }}
-                  publich_dir: ./Bundle
+                  publish_dir: ./Bundle
