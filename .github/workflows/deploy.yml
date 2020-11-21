@@ -10,7 +10,7 @@ jobs:
             - uses: actions/checkout@v2
 
             - name: Bundle
-              uses: swiftwasm/swiftwasm-action@v3
+              uses: swiftwasm/swiftwasm-action@v5.3
               with:
                   shell-action: carton bundle 
                     
