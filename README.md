@@ -19,6 +19,6 @@ $ open Package.swift
 #### 2. host server
 
 ```
-$ carton dev
+$ carton dev --custom-index-page static/index.html
 ```
 

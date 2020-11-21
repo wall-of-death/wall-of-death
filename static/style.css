@@ -1,0 +1,10 @@
+body {
+    background-color: black;
+}
+
+.header {
+    background-image: url('./assets/header.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

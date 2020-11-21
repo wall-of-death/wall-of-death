@@ -1,17 +1,72 @@
-import TokamakShim
+import TokamakDOM
 import JavaScriptKit
+import Foundation
 
 struct TokamakApp: App {
     var body: some Scene {
-        WindowGroup("Tokamak App") {
-            ContentView()
+        WindowGroup("Wall Of Death Inc.") {
+            VStack(alignment: .leading) {
+                HStack {
+                    HeaderView()
+                    Spacer()
+                }
+                Spacer()
+            }
         }
     }
 }
 
-struct ContentView: View {
+struct HeaderView: View {
     var body: some View {
-        Text("Hello, world!")
+        HTML("div", ["class": "header"]) {
+            VStack {
+                HStack {
+                    VStack(alignment: .leading, spacing: 20) {
+                        Text("Wall Of Death Inc.")
+                            .font(.title)
+                            .padding(.bottom, 20)
+                            
+                        HTML("a", ["href": "#"]) {
+                            Text("VISION")
+                                .frame(width: .infinity, height: .infinity, alignment: .leading)
+                        }
+                        .padding(.bottom, 12)
+                        
+                        HTML("a", ["href": "#"]) {
+                            Text("SERVICE")
+                        }
+                        .padding(.bottom, 12)
+                        
+                        HTML("a", ["href": "#"]) {
+                            Text("COMMENT")
+                        }
+                        .padding(.bottom, 12)
+                        
+                        HTML("a", ["href": "#"]) {
+                            Text("RECRUIT")
+                        }
+                        .padding(.bottom, 12)
+                        
+                        HTML("a", ["href": "#"]) {
+                            Text("SERVICE")
+                        }
+                    }
+                    Spacer()
+                }
+                Spacer()
+                
+                
+                Text("Boost Band Activities")
+                    .font(.title)
+                    .padding(.bottom, 20)
+                
+                
+            }
+            .padding(20)
+        }
+        .frame(minHeight: 500, idealHeight: 500, maxHeight: 500)
+        
+        
     }
 }
 
